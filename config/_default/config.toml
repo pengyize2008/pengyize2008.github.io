@@ -2,7 +2,9 @@
 # 站点基本配置
 # 部署前记得把 baseurl 改成你自己的域名
 # ------------------------------------------------------------------
-baseurl = "https://pengyize2008.github.io/"
+# 站点实际地址（自定义域名 pengyize.是.gay）。
+# 用 punycode 写法可避免 sitemap 与规范链接出现编码问题。
+baseurl = "https://pengyize.xn--0iv.gay/"
 title   = "一个芹娜厨的小窝"
 
 # 站点语言：主题的翻译文件是 i18n/zh.toml，所以这里用 "zh"
