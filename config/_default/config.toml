@@ -14,7 +14,9 @@ defaultContentLanguageInSubdir  = false
 hasCJKLanguage = true
 
 # 换成自己的 Disqus 短名称；留空则关闭评论
-disqusShortname = "hugo-theme-stack"
+# 评论：留空即关闭。注册 Disqus 后把 shortname 填在引号里，
+# 同时把 params.toml 里 [comments] 的 enabled 改回 true
+disqusShortname = ""
 
 [pagination]
     pagerSize = 5

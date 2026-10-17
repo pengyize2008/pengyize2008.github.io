@@ -1,24 +1,19 @@
-# Configure main menu and social menu
-#[[main]]
-#identifier = "home"
-#name = "Home"
-#url = "/"
-#[main.params]
-#icon = "home"
-#newtab = true
+# 主菜单（首页/归档/搜索/友链）不需要在这里配置：
+# 它们由各页面 front matter 里的 menu.main 自动生成。
+# 这里只配置左侧边栏的社交图标。
 
 [[social]]
     identifier = "github"
     name       = "GitHub"
-    url        = "https://github.com/CaiJimmy/hugo-theme-stack"
+    url        = "https://github.com/pengyize2008"
 
     [social.params]
         icon = "brand-github"
 
 [[social]]
-    identifier = "twitter"
-    name       = "Twitter"
-    url        = "https://twitter.com"
+    identifier = "rss"
+    name       = "RSS 订阅"
+    url        = "/index.xml"
 
     [social.params]
-        icon = "brand-twitter"
+        icon = "rss"

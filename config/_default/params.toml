@@ -49,8 +49,9 @@ SortBy              = "default"
     default = "auto"
 
 ## Comments
+# 暂时关闭：本地预览时 Disqus 本来也不显示，等注册好自己的 shortname 再开
 [comments]
-    enabled  = true
+    enabled  = false
     provider = "disqus"
 
     # See all the available configurations at https://github.com/CaiJimmy/hugo-theme-stack/blob/master/config/_default/params.toml
