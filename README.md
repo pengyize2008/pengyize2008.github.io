@@ -45,3 +45,45 @@ hugo mod tidy
 ## Deploy to another static page hostings
 
 Check official Hugo documentation: https://gohugo.io/host-and-deploy/
+
+---
+
+## 这个站点怎么用
+
+站点根目录：`D:\qinna`（Hugo + Stack 主题，主题通过 Hugo Modules 自动管理）。
+
+### 写一篇日记
+
+```bash
+hugo new content post/diary/2026-10-16-日记标题.md
+```
+
+生成的文件在 `content/post/diary/`，用任意编辑器写 Markdown 正文即可。
+front matter 里的 `categories` 已默认填好「日记」，方便在侧边栏按分类筛选。
+
+### 本地预览
+
+```bash
+hugo server -D
+```
+
+打开 <http://localhost:1313>，保存文件后页面会自动刷新。`-D` 表示连草稿一起显示。
+
+### 发布上线
+
+```bash
+hugo            # 生成静态文件到 public/
+git add -A
+git commit -m "新日记"
+git push
+```
+
+推到 GitHub 后，`.github/workflows/deploy.yml` 会自动构建并发布到
+<https://pengyize2008.github.io/>。
+
+### 界面语言
+
+主题的翻译文件是 `i18n/zh.toml`，因此 `config/_default/languages.toml` 里的
+语言标识必须写 `zh`；侧边栏菜单的中文名在 `content/_index.md` 与
+`content/page/archives/index.md` 的 front matter 里设置。
+

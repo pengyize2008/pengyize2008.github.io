@@ -19,8 +19,8 @@ SortBy              = "default"
 
 [sidebar]
     emoji    = "🍥"
-    subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    avatar   = "img/avatar.png"
+    subtitle = "一些芹娜厨的碎碎念罢了"
+    avatar   = "img/avatar.jpg"
 
 [article]
     headingAnchor = false
