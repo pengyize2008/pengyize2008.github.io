@@ -11,7 +11,8 @@ SortBy              = "default"
 
 [footer]
     since      = 2020
-    customText = ""
+    # 全站版权声明，显示在页脚；此字段会按 HTML 渲染
+    customText = '除特别声明不适用外，其他内容均按 <a href="/license/">CC BY-SA 3.0</a> 协议授权。'
 
 [dateFormat]
     published   = ":date_full"
@@ -29,7 +30,9 @@ SortBy              = "default"
 
     [article.license]
         enabled = true
-        default = "Licensed under CC BY-NC-SA 4.0"
+        # 每篇文章底部的授权声明；可在文章 front matter 用 license 字段覆盖，
+        # 写 license: false 可让该篇不显示
+        default = '本文采用 [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.zh-hans) 协议授权'
 
 [widgets]
     homepage = [
